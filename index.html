@@ -9,7 +9,7 @@
                 height: 100%;
                 margin: 0;  
                 padding: 0;
-
+                scroll-behavior: smooth;
             }
             .parallax {
                 height: 100%;
@@ -19,6 +19,7 @@
                 background-size: cover;
                 border: none;
                 display: grid;
+                scroll-snap-align: start none;
             }
             @media only screen and (max-device-width: 1366px) {
                 .parallax {
@@ -36,7 +37,7 @@
             }
             h2 {
                 margin-top: 0;
-                margin-bottom: 40%;
+                margin-bottom: 10%;
             }
             .about {
                 backdrop-filter: blur(10px) brightness(80%);
@@ -44,6 +45,7 @@
                 padding: 0;
                 font-size: 3.5vw;
                 text-align: center;
+                place-items: center;
             }
             .contact {
                 backdrop-filter: blur(1px) brightness(50%);
@@ -51,13 +53,22 @@
                 padding: 0;
                 font-size: 3.5vw;
                 text-align: center;
+                place-items: center;
             }
             a {
                 color: rgb(78, 248, 211);
             }
+            .container {
+                height: 100%;
+                margin: 0;  
+                padding: 0;
+                scroll-snap-type: y mandatory;
+                overflow-y: scroll;
+            }
         </style>
     </head>
     <body>
+        <div class="container">
         <div class="parallax" style="background-image: url('BG_Cam.jpg');
                 place-items: center;">
             <div class="maintitle">
@@ -79,6 +90,7 @@
                 <br>
                 Github :  <a href="https://github.com/sudhirajayatillaka">https://github.com/sudhirajayatillaka</a>
             </div>
+        </div>
         </div>
     </body>
 </html>
