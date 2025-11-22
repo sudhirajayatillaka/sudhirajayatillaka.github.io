@@ -12,7 +12,6 @@
 
             }
             .parallax {
-                background-image: url('BG_Cam.jpg');
                 height: 100%;
                 background-attachment: fixed;
                 background-position: center;
@@ -20,7 +19,6 @@
                 background-size: cover;
                 border: none;
                 display: grid;
-                place-items: center;
             }
             @media only screen and (max-device-width: 1366px) {
                 .parallax {
@@ -30,29 +28,57 @@
             .maintitle {
                 position: center;
                 backdrop-filter: blur(10px) brightness(80%);
-                font-size: 100px;
+                font-size: 12vw;
                 padding: 1%;
                 text-align: center;
                 color: ghostwhite;
                 border-radius: 15px;
             }
-            h1 {
-                margin-top: 0px;
+            h2 {
+                margin-top: 0;
+                margin-bottom: 40%;
+            }
+            .about {
+                backdrop-filter: blur(10px) brightness(80%);
+                margin: 0;  
+                padding: 0;
+                font-size: 3.5vw;
+                text-align: center;
+            }
+            .contact {
+                backdrop-filter: blur(1px) brightness(50%);
+                margin: 0;  
+                padding: 0;
+                font-size: 3.5vw;
+                text-align: center;
+            }
+            a {
+                color: rgb(78, 248, 211);
             }
         </style>
     </head>
     <body>
-        <div class="parallax">
+        <div class="parallax" style="background-image: url('BG_Cam.jpg');
+                place-items: center;">
             <div class="maintitle">
                 Sudhira Jayatillaka
             </div>
         </div>
-        <div style="height:500px; background:linear-gradient(180deg, #101010 0%, #000000 51%, #050505 85%); font-size:36px; color: ghostwhite;">
-            <center><h1>About Me</h1></center>
-            <p>
+        <div class="parallax" style="background-image: url('BG_Cam.jpg'); color: ghostwhite;">
+            <div class="about">
+                <h2 style=" font-size: 8vw;" >About Me</h2>
                 Hi, I'm Sudhira Jayatillaka and welcome to my personal page.<br>
-            </p>
+                I like tinkering with electronics and programming.<br>
+                In my free time I take photos and you can see those on my instagram.  
+            </div>
         </div>
-        <div class="parallax"></div>
+        <div class="parallax" style="background-image: url('BG_Moss.jpg'); color: ghostwhite;">
+            <div class="contact">
+                <h2 style=" font-size: 10vw;" >Contact</h2>
+                Instagram : <a href="https://www.instagram.com/sudhirajayatillaka/">https://www.instagram.com/sudhirajayatillaka/</a>
+                <br>
+                Github :  <a href="https://github.com/sudhirajayatillaka">https://github.com/sudhirajayatillaka</a>
+            </div>
+        </div>
     </body>
 </html>
